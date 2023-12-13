@@ -1,0 +1,408 @@
+{
+  "id": "4340731",
+  "name": "钦州智慧农业平台",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "25204360",
+      "name": "系统设置",
+      "font_class": "xitongshezhi",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "35473897",
+      "name": "设置-设置-填充",
+      "font_class": "shezhi-shezhi-tianchong",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "797505",
+      "name": "业务接口参数",
+      "font_class": "yewujiekoucanshu",
+      "unicode": "e68a",
+      "unicode_decimal": 59018
+    },
+    {
+      "icon_id": "908582",
+      "name": "商品标签",
+      "font_class": "shangpinbiaoqian",
+      "unicode": "e6a2",
+      "unicode_decimal": 59042
+    },
+    {
+      "icon_id": "1418230",
+      "name": "图片",
+      "font_class": "tupian",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "3834482",
+      "name": "路由器",
+      "font_class": "luyouqi",
+      "unicode": "e61f",
+      "unicode_decimal": 58911
+    },
+    {
+      "icon_id": "6844458",
+      "name": "关闭",
+      "font_class": "guanbi",
+      "unicode": "e641",
+      "unicode_decimal": 58945
+    },
+    {
+      "icon_id": "7450663",
+      "name": "组织",
+      "font_class": "zuzhi",
+      "unicode": "e669",
+      "unicode_decimal": 58985
+    },
+    {
+      "icon_id": "11372767",
+      "name": "会员",
+      "font_class": "huiyuan",
+      "unicode": "e8c5",
+      "unicode_decimal": 59589
+    },
+    {
+      "icon_id": "15686662",
+      "name": "账户设置",
+      "font_class": "zhanghushezhi",
+      "unicode": "e6e3",
+      "unicode_decimal": 59107
+    },
+    {
+      "icon_id": "11807878",
+      "name": "消息",
+      "font_class": "xiaoxi",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "5387583",
+      "name": "箭头_向右",
+      "font_class": "jiantou_xiangyou",
+      "unicode": "eb08",
+      "unicode_decimal": 60168
+    },
+    {
+      "icon_id": "827647",
+      "name": "男",
+      "font_class": "nan",
+      "unicode": "e661",
+      "unicode_decimal": 58977
+    },
+    {
+      "icon_id": "2484563",
+      "name": "女",
+      "font_class": "nv",
+      "unicode": "e64a",
+      "unicode_decimal": 58954
+    },
+    {
+      "icon_id": "12503720",
+      "name": "地址",
+      "font_class": "dizhi",
+      "unicode": "e622",
+      "unicode_decimal": 58914
+    },
+    {
+      "icon_id": "900157",
+      "name": "账号",
+      "font_class": "zhanghao",
+      "unicode": "e65f",
+      "unicode_decimal": 58975
+    },
+    {
+      "icon_id": "2815727",
+      "name": "素材",
+      "font_class": "sucai",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "6241495",
+      "name": "打印传真",
+      "font_class": "dayinchuanzhen",
+      "unicode": "e627",
+      "unicode_decimal": 58919
+    },
+    {
+      "icon_id": "7678920",
+      "name": "邮箱",
+      "font_class": "youxiang",
+      "unicode": "e631",
+      "unicode_decimal": 58929
+    },
+    {
+      "icon_id": "8361790",
+      "name": "密码",
+      "font_class": "mima",
+      "unicode": "e6c3",
+      "unicode_decimal": 59075
+    },
+    {
+      "icon_id": "10371616",
+      "name": "BOM结构",
+      "font_class": "icon_function_BOMjiegou",
+      "unicode": "e893",
+      "unicode_decimal": 59539
+    },
+    {
+      "icon_id": "10715453",
+      "name": "邮箱",
+      "font_class": "youxiang1",
+      "unicode": "e639",
+      "unicode_decimal": 58937
+    },
+    {
+      "icon_id": "11696920",
+      "name": "账号",
+      "font_class": "zhanghao1",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "17605483",
+      "name": "电话",
+      "font_class": "dianhua1",
+      "unicode": "e817",
+      "unicode_decimal": 59415
+    },
+    {
+      "icon_id": "19412297",
+      "name": "方案制作",
+      "font_class": "fanganzhizuo",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "22612632",
+      "name": "大棚种苗管理",
+      "font_class": "dapengzhongmiaoguanli",
+      "unicode": "e9e7",
+      "unicode_decimal": 59879
+    },
+    {
+      "icon_id": "24590650",
+      "name": "手机号、手机",
+      "font_class": "a-shoujihaoshouji",
+      "unicode": "e6b2",
+      "unicode_decimal": 59058
+    },
+    {
+      "icon_id": "38382508",
+      "name": "电话-copy",
+      "font_class": "dianhua1-copy",
+      "unicode": "eca8",
+      "unicode_decimal": 60584
+    },
+    {
+      "icon_id": "1265485",
+      "name": "电话",
+      "font_class": "dianhua",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "4320365",
+      "name": "重新试样",
+      "font_class": "zhongxinshiyang",
+      "unicode": "e65e",
+      "unicode_decimal": 58974
+    },
+    {
+      "icon_id": "5349019",
+      "name": "审批-详情-返回",
+      "font_class": "fanhui",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "5027",
+      "name": "手机",
+      "font_class": "shouji",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "28689896",
+      "name": "人员",
+      "font_class": "renyuan",
+      "unicode": "e654",
+      "unicode_decimal": 58964
+    },
+    {
+      "icon_id": "577403",
+      "name": "向右2",
+      "font_class": "xiangyou2",
+      "unicode": "e776",
+      "unicode_decimal": 59254
+    },
+    {
+      "icon_id": "8098877",
+      "name": "羊角符",
+      "font_class": "yangjiaofu",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "2076221",
+      "name": " 定位小",
+      "font_class": "dingweixiao",
+      "unicode": "e87e",
+      "unicode_decimal": 59518
+    },
+    {
+      "icon_id": "6399660",
+      "name": "换一换",
+      "font_class": "weibiaoti--",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "35800296",
+      "name": "ic_清空",
+      "font_class": "ic_qingkong",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "15301774",
+      "name": "土壤磷含量",
+      "font_class": "turanglinhanliang",
+      "unicode": "eb69",
+      "unicode_decimal": 60265
+    },
+    {
+      "icon_id": "15301775",
+      "name": "土壤钾含量",
+      "font_class": "turangjiahanliang",
+      "unicode": "eb6a",
+      "unicode_decimal": 60266
+    },
+    {
+      "icon_id": "15301776",
+      "name": "土壤氮含量",
+      "font_class": "turangdanhanliang",
+      "unicode": "eb6b",
+      "unicode_decimal": 60267
+    },
+    {
+      "icon_id": "24732459",
+      "name": "风速",
+      "font_class": "fengsu",
+      "unicode": "eca7",
+      "unicode_decimal": 60583
+    },
+    {
+      "icon_id": "25716465",
+      "name": "累计降雨量",
+      "font_class": "leijijiangyuliang",
+      "unicode": "ea2e",
+      "unicode_decimal": 59950
+    },
+    {
+      "icon_id": "25716478",
+      "name": "土壤湿度",
+      "font_class": "turangshidu",
+      "unicode": "ea30",
+      "unicode_decimal": 59952
+    },
+    {
+      "icon_id": "25716484",
+      "name": "土壤温度",
+      "font_class": "turangwendu",
+      "unicode": "ea31",
+      "unicode_decimal": 59953
+    },
+    {
+      "icon_id": "25716511",
+      "name": "降雨量",
+      "font_class": "jiangyuliang",
+      "unicode": "ea32",
+      "unicode_decimal": 59954
+    },
+    {
+      "icon_id": "25716513",
+      "name": "光照强度",
+      "font_class": "guangzhaoqiangdu",
+      "unicode": "ea33",
+      "unicode_decimal": 59955
+    },
+    {
+      "icon_id": "28606912",
+      "name": "大气湿度",
+      "font_class": "daqishidu",
+      "unicode": "e6bd",
+      "unicode_decimal": 59069
+    },
+    {
+      "icon_id": "28606921",
+      "name": "大气温度",
+      "font_class": "daqiwendu",
+      "unicode": "e6be",
+      "unicode_decimal": 59070
+    },
+    {
+      "icon_id": "28606925",
+      "name": "气压2",
+      "font_class": "qiya2",
+      "unicode": "e6bf",
+      "unicode_decimal": 59071
+    },
+    {
+      "icon_id": "28606966",
+      "name": "土壤盐分",
+      "font_class": "turangyanfen",
+      "unicode": "e6c1",
+      "unicode_decimal": 59073
+    },
+    {
+      "icon_id": "32769783",
+      "name": "turangPH",
+      "font_class": "turangPH",
+      "unicode": "e684",
+      "unicode_decimal": 59012
+    },
+    {
+      "icon_id": "37288732",
+      "name": "风向",
+      "font_class": "fengxiang",
+      "unicode": "e64c",
+      "unicode_decimal": 58956
+    },
+    {
+      "icon_id": "167196",
+      "name": "价格",
+      "font_class": "jiage",
+      "unicode": "e66a",
+      "unicode_decimal": 58986
+    },
+    {
+      "icon_id": "577362",
+      "name": "时钟",
+      "font_class": "shizhong",
+      "unicode": "e74f",
+      "unicode_decimal": 59215
+    },
+    {
+      "icon_id": "5756001",
+      "name": "分类",
+      "font_class": "fenlei",
+      "unicode": "e623",
+      "unicode_decimal": 58915
+    },
+    {
+      "icon_id": "22942747",
+      "name": "品种名称",
+      "font_class": "pinzhongmingcheng",
+      "unicode": "e9fb",
+      "unicode_decimal": 59899
+    }
+  ]
+}

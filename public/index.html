@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <script src="<%= BASE_URL %>config.js" type='text/javascript'></script>
+    <link rel="stylesheet" type="text/css" href="<%= BASE_URL %>static/icon/iconfont.css">
+    <script>
+        window._AMapSecurityConfig = {
+            securityJsCode: 'fcd82fe3065a2e3138b9dccee5f6c68a'
+        }
+    </script>
+</head>
+<body>
+<noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+        Please enable it to continue.</strong>
+</noscript>
+<div id="app"></div>
+<!-- built files will be auto injected -->
+</body>
+</html>
+<script>
+    (function (doc, win) {
+        // region 自适应
+        let fontSize = 16;
+        let docEl = doc.documentElement,
+            recalc = function () {
+                // let clientWidth = docEl.clientWidth;
+                let clientWidth = window.screen.width;
+                //获取倍率
+                let bl = clientWidth / window.servicesUrl.width
+
+                //字体基础大小
+                fontSize = bl * 16
+                //换算尺寸
+                docEl.style.fontSize = fontSize + 'px';
+            };
+        recalc()
+        win.addEventListener('resize', recalc, false);
+        // endregion
+
+    })(document, window);
+</script>
+<style>
+    body {
+        margin: 0;
+    }
+</style>

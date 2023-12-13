@@ -1,0 +1,15 @@
+/* 改变主题色变量 */
+$--color-primary: #009946;
+$--color-danger: #EC652A;
+$--color-text-primary: #192B20;
+$--color-text-regular: #142338;
+
+/* 改变 icon 字体路径变量，必需 */
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+
+@import "~element-ui/packages/theme-chalk/src/index";
+
+.el-pagination .el-pager li.active{
+  color: $--color-primary !important;
+  background: rgba(0, 153, 70, 0.05) !important;
+}

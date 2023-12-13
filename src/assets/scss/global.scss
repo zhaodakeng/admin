@@ -1,0 +1,81 @@
+$color-primary: #009946;
+* {
+  //font-family:"Alibaba-PuHuiTi-Regular";
+  &::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    box-shadow: inset 0 0 8px rgba(64, 64, 64, 0.2);
+  }
+
+  &::-webkit-scrollbar-track {
+    border-radius: 20px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, .1);
+  }
+
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+}
+
+
+@font-face {
+  font-family: 'Alibaba-PuHuiTi-Bold';
+  src: url('@/assets/font/Alibaba-PuHuiTi-Bold.ttf');
+}
+
+/*@font-face {
+  font-family: 'Alibaba-PuHuiTi-Regular';
+  src : url('@/assets/font/Alibaba-PuHuiTi-Regular.ttf');
+}
+*/
+
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.save-form {
+  width: 90%;
+
+  .el-form-item__content {
+    display: flex;
+  }
+}
+
+.el-switch {
+  height: 40px !important;
+}
+
+.search_box {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 16px;
+  box-sizing: border-box;
+
+  .el-form--inline .el-form-item {
+    margin-bottom: 10px;
+    margin-right: 20px;
+  }
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.row-omit {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.rows-omit {
+  -webkit-line-clamp: 2; // 用来限制在一个块元素显示的文本的行数
+  display: -webkit-box; // 将对象作为弹性伸缩盒模型显示
+  -webkit-box-orient: vertical; //设置或检查伸缩盒对象的子元素的排列方式
+  text-overflow: ellipsis; // 在多行文本的情况下，用...隐藏超出范围的文本
+  word-break: break-all;
+  overflow: hidden;
+}
+
+.iconfont {
+  font-size: 20px;
+}
