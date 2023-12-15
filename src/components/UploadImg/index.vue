@@ -7,9 +7,10 @@
         v-bind="$attrs"
         list-type="picture-card"
         :file-list="fileList"
+        :before-upload="beforeUpload"
         :on-preview="handlePictureCardPreview"
         :on-success="handleSuccess"
-        :on-remove="handleRemove">
+        :on-remove="handleRemove" >
       <i class="el-icon-plus"></i>
     </el-upload>
     <el-dialog :visible.sync="dialogVisible" append-to-body>
@@ -20,13 +21,14 @@
 
 <script>
 import {getToken} from "@/utils/tool";
+import * as imageConversion from 'image-conversion'
 
 export default {
   name: "UploadImg",
   props: {
     imgList: {
       type: Array,
-      default: () => {
+      default: ()=>{
         return []
       }
     }
@@ -43,10 +45,8 @@ export default {
   },
   watch: {
     imgList(val) {
-      if (!this.initStatus) {
-        this.initStatus = true
-        this.imgListToFileList()
-      }
+      // console.log('watch',val)
+      this.imgListToFileList()
     }
   },
   data() {
@@ -54,13 +54,26 @@ export default {
       dialogImageUrl: '',
       dialogVisible: false,
       fileList: [],
-      initStatus: false
     };
   },
   mounted() {
     this.imgListToFileList()
   },
   methods: {
+// 上传之前的钩子函数
+    beforeUpload(file) {
+      // 判断是图片
+      const isJpgOrPng = file.type === 'image/jpeg' || file.type === 'image/png';
+      if (!isJpgOrPng) {
+        console.log('上传图片只能是 JPG 或 PNG 格式!');
+        return false;
+      }
+      return new Promise((resolve) => {
+        imageConversion.compressAccurately(file, {size:10}).then(res => {
+          resolve(res);
+        });
+      })
+    },
     /**
      * @description: 检查文件长度, 若与限制长度相同则隐藏上传按钮
      * @param {*} filelist 上传文件列表
@@ -97,7 +110,7 @@ export default {
     handlePictureCardPreview(file) {
       this.dialogImageUrl = file.url;
       this.dialogVisible = true;
-    }
+    },
   }
 }
 </script>
