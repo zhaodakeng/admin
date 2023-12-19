@@ -31,7 +31,8 @@ export default {
       default: ()=>{
         return []
       }
-    }
+    },
+    zip:Boolean
   },
   computed: {
     action() {
@@ -68,6 +69,9 @@ export default {
         console.log('上传图片只能是 JPG 或 PNG 格式!');
         return false;
       }
+
+      if(!this.zip) return true //不压缩
+
       return new Promise((resolve) => {
         imageConversion.compressAccurately(file, {size:10}).then(res => {
           resolve(res);

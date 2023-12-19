@@ -35,7 +35,6 @@ export default {
         filterStr: undefined,
       },
       dialogVisible: false,
-      test: 0,
       columns: [
         {
           prop: 'title',
