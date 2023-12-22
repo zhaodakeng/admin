@@ -26,19 +26,19 @@
 <script>
     (function (doc, win) {
         // region 自适应
-        let fontSize = 16;
-        let docEl = doc.documentElement,
-            recalc = function () {
-                // let clientWidth = docEl.clientWidth;
-                let clientWidth = window.screen.width;
-                //获取倍率
-                let bl = clientWidth / window.servicesUrl.width
-
-                //字体基础大小
-                fontSize = bl * 16
+        let fontSize = window.servicesUrl.fontSize;
+        let docEl = doc.documentElement
+        let recalc = function () {
+            let clientWidth = docEl.clientWidth;
+            // let clientWidth = window.screen.width;
+            //获取倍率
+            let bl = clientWidth / window.servicesUrl.width
+            if ((bl * fontSize) < window.servicesUrl.fontSize)
+                docEl.style.fontSize = window.servicesUrl.fontSize + 'px';
+            else
                 //换算尺寸
-                docEl.style.fontSize = fontSize + 'px';
-            };
+                docEl.style.fontSize = bl * fontSize + 'px';
+        };
         recalc()
         win.addEventListener('resize', recalc, false);
         // endregion
