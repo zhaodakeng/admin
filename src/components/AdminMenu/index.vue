@@ -8,13 +8,13 @@
       text-color="#fff"
       @open="handleOpen"
       @close="handleClose">
-    <el-submenu :index="item.path" v-for="item in menu">
+    <el-submenu :index="item.path" v-for="item in menu" :key="item.path">
       <template slot="title">
         <i class="iconfont" :class="item.icon"/>
         <span v-text="item.title"/>
       </template>
       <el-menu-item-group>
-        <el-menu-item v-for="childrenItem in item.children" :index="childrenItem.path" v-text="childrenItem.title"/>
+        <el-menu-item v-for="childrenItem in item.children" :key="childrenItem.path" :index="childrenItem.path" v-text="childrenItem.title"/>
       </el-menu-item-group>
     </el-submenu>
   </el-menu>
