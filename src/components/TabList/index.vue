@@ -114,6 +114,7 @@ export default {
   flex-direction: row;
   align-items: center;
   overflow-x: auto;
+  overflow-y: hidden;
 
   ::-webkit-scrollbar {
     height: 6px;
