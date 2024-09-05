@@ -77,6 +77,8 @@ const user = {
                     // const data = response.data
                     commit('SET_TOKEN', response.token)
                     resolve()
+                }).catch(err=>{
+                    reject(err)
                 })
             })
         },

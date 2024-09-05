@@ -45,26 +45,29 @@ service.interceptors.request.use(config => {
 // respone拦截器
 service.interceptors.response.use(
     response => {
-        let data = response.data;
-         // 状态用于判断
-        if(data.code == 401){
-            //无效token
-            Message.error("登录失效，请重新登录！")
-            router.push({
-                path: '/login',
-                replace: true
-            })
-            return
-        } else if (data.code >= 200 && data.code < 300) {
-            successFun(data.code)
-            // 成功返回数据
-            return data;
-        } else if (data.code >= 100 && data.code < 200) {
-            Message.error(data.message)
-        } else {
-            Message.error(data.message)
-            return Promise.reject(data.message);
-        }
+        return new Promise((resolve, reject) => {
+            let data = response.data;
+            // 状态用于判断
+            if(data.code == 401){
+                //无效token
+                Message.error("登录失效，请重新登录！")
+                router.push({
+                    path: '/login',
+                    replace: true
+                })
+                reject(data.message)
+            } else if (data.code >= 200 && data.code < 300) {
+                successFun(data.code)
+                // 成功返回数据
+                resolve(data);
+            } else if (data.code >= 100 && data.code < 200) {
+                Message.error(data.message)
+                reject(data.message)
+            } else {
+                Message.error(data.message)
+                reject(data.message)
+            }
+        })
     },
     error => {
         console.log('err' + error)// for debug
